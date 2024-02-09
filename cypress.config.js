@@ -8,5 +8,6 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       return plugins(on, config);
     },
+    experimentalStudio: true,
   },
 });

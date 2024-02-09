@@ -1,10 +1,8 @@
 module.exports = {
-  darkMode: 'class', // This can be 'media' if preferred.
-  mode: 'jit',
-  // Don't add a glob below `public` as Rollup doesn't
-  // recognize them and will rebuild in an infinite loop.
-  purge: ['./src/**/*.svelte', './src/**/*.html', './public/index.html'],
-  theme: {},
-  variants: {},
-  plugins: [],
+  content: ['./src/**/*.{html,js,jsx,ts,tsx}'], // Rutas de los archivos de tu proyecto
+  purge: {
+    enabled: true,
+    content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
+  },
+  // Otras opciones de configuración de Tailwind CSS...
 };

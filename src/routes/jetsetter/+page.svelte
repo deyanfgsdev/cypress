@@ -4,7 +4,7 @@
 
   let newItemName = '';
 
-  const addItem = (event: Event) => {
+  const addItem = () => {
     add(newItemName);
     newItemName = '';
   };
